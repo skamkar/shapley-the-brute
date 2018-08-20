@@ -8,7 +8,7 @@ The specific use case provided is a sigmoid, where a collection of elements are 
 For example, given x = [1,1] and y = sigmoid(np.sum(x)), the contributions of
 x[0] and x[1], with respect to the output y, is x_contrib = ~[0.19, 0.19].
 
-[Shapley values](https://en.wikipedia.org/wiki/Shapley_value) have a several great properties,
+[Shapley values](https://en.wikipedia.org/wiki/Shapley_value) have several great properties,
 one of which is that that contributions will sum to the output. From the previous example,
 x_contrib[0] + x_contrib[1] + sigmoid(0) = 0.88, which also equals sigmoid(1+1). Sigmoid of 0
 must be considered as it represents the null set, or equivalently, E[f(x)].
